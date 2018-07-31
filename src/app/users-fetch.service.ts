@@ -10,7 +10,7 @@ export class UsersFetchService {
 
 	constructor(private httpClient: HttpClient) { }		
 
-	private _rootUrl: string = "http://jsonplaceholder.typicode.com/users";
+	private _rootUrl: string = "https://jsonplaceholder.typicode.com/users";
 
 	getUsers(): Observable<IUser[]>{
 		return this.httpClient.get<IUser[]>(this._rootUrl);
